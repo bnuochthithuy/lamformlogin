@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Form</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0b8068, #00b2d4);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgb(109, 177, 172);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+   
+    padding: 10px;
+    background-color: #336b38;
+    color: white;
+    border-radius: 2px;
+    margin-top: 10px;
+    
+}
+
+button:hover {
+    background-color: #2a5b30;
+}
+
+
+</style>
+<body>
+    <div class="form-container">
+        <h2>Gửi mail đến Phòng Kinh Doanh</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">
+                    <i class="fa fa-user"></i>
+                    Họ tên *
+                </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">
+                    <i class="fa fa-phone"></i>
+                    Di động *
+                </label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">
+                    <i class="fa fa-envelope"></i>
+                    Email
+                </label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">
+                    <i class="fa fa-tag"></i>
+                    Tiêu đề email
+                </label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">
+                    <i class="fa fa-comment"></i>
+                    Nội dung email...
+                </label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+            <button type="submit">GỬI ĐI</button>
+        </form>
+    </div>
+</body>
+</html>
